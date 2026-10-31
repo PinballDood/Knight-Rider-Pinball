@@ -6,7 +6,251 @@
 # drivers, ball devices, hardware platforms, and more. You can
 # include everything here, or create sub-config files to be
 # imported and merged with this one.
-
+hardware:
+  platform: p3_roc
+  driverboards: pdb
+playfields:
+  playfield:
+    default_source_device: None
+    tags: default
 modes:
   - attract
   - base
+switches:
+
+  # -------------------------
+  # Cabinet
+  # -------------------------
+
+  s_flipper_left:
+    number: 0
+
+  s_flipper_right:
+    number: 1
+
+  s_enter:
+    number: 3
+
+  s_exit:
+    number: 4
+
+  s_down:
+    number: 5
+
+  s_up:
+    number: 6
+
+  s_tilt:
+    number: 7
+    tags: tilt_warning
+
+  s_start:
+    number: 8
+    tags: start
+
+  s_coin_door:
+    number: 9
+
+  s_coin_1:
+    number: 10
+
+  s_coin_2:
+    number: 11
+
+  s_coin_3:
+    number: 12
+
+  s_coin_4:
+    number: 13
+
+  s_coin_5:
+    number: 14
+
+  s_coin_6:
+    number: 15
+
+
+  # -------------------------
+  # Lower / Middle Playfield
+  # -------------------------
+
+  s_left_pop:
+    number: 16
+
+  s_bottom_pop:
+    number: 17
+
+  s_right_pop:
+    number: 18
+
+  s_left_orbit:
+    number: 19
+
+  s_left_saucer:
+    number: 20
+
+  s_left_bank_1:
+    number: 21
+
+  s_left_bank_2:
+    number: 22
+
+  s_left_bank_3:
+    number: 23
+
+  s_drop_1:
+    number: 24
+    type: NC
+
+  s_drop_2:
+    number: 25
+    type: NC
+
+  s_right_standup:
+    number: 26
+
+  s_right_saucer:
+    number: 27
+
+  s_center_bank_3:
+    number: 28
+
+  s_center_bank_1:
+    number: 29
+
+  s_center_bank_2:
+    number: 30
+
+  s_drop_3:
+    number: 31
+    type: NC
+
+
+  # -------------------------
+  # Inlanes / Outlanes /
+  # Slings / EOS
+  # -------------------------
+
+  s_left_inlane:
+    number: 64
+
+  s_left_outlane:
+    number: 65
+
+  s_left_sling:
+    number: 66
+
+  s_eos_left:
+    number: 67
+
+  s_eos_right:
+    number: 68
+
+  s_right_sling:
+    number: 69
+
+  s_right_inlane:
+    number: 70
+
+  s_right_outlane:
+    number: 71
+
+
+  # -------------------------
+  # Trough
+  # Factory switches are NC
+  # -------------------------
+
+  s_trough_1:
+    number: 72
+    type: NC
+
+  s_trough_2:
+    number: 73
+    type: NC
+
+  s_trough_3:
+    number: 74
+    type: NC
+
+  s_trough_4:
+    number: 75
+    type: NC
+
+  s_trough_5:
+    number: 76
+    type: NC
+
+  s_trough_6:
+    number: 77
+    type: NC
+
+  s_trough_jam:
+    number: 78
+    type: NC
+
+
+  # -------------------------
+  # Shooter / Ramps / Posts
+  # -------------------------
+
+  s_shooter:
+    number: 79
+
+  s_left_scoring_post:
+    number: 80
+
+  s_right_ramp_made:
+    number: 81
+    type: NC
+
+  s_right_scoring_post:
+    number: 82
+
+  s_left_ramp_made:
+    number: 83
+    type: NC
+
+
+  # -------------------------
+  # Pops / Spinners /
+  # Upper Playfield
+  # -------------------------
+
+  s_left_pop_rebound:
+    number: 84
+
+  s_left_pop_target:
+    number: 85
+
+  s_right_pop_target:
+    number: 86
+
+  s_left_spinner:
+    number: 87
+
+  s_upper_lane_1:
+    number: 88
+
+  s_upper_lane_2:
+    number: 89
+
+  s_upper_lane_3:
+    number: 90
+
+  s_upper_lane_4:
+    number: 91
+
+  s_right_orbit:
+    number: 92
+
+  s_right_spinner:
+    number: 93
+
+  s_top_saucer:
+    number: 94
+
+  s_upper_right_rollover:
+    number: 95
+
+
