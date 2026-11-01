@@ -11,7 +11,7 @@ hardware:
   driverboards: pdb
 playfields:
   playfield:
-    default_source_device: None
+    default_source_device: bd_trough
     tags: default
 modes:
   - attract
@@ -313,8 +313,31 @@ coils:
   c_right_saucer:
     number: A4-B1-7
     default_pulse_ms: 15
-    max_pulse_ms: 15    
-
+    max_pulse_ms: 15   
+  
+  # Left saucer
+  c_left_saucer:
+    number: C15
+    default_pulse_ms: 24
+    max_pulse_ms: 24 
+ 
+  
+  c_top_saucer:
+    number: C12
+    default_pulse_ms: 24
+    max_pulse_ms: 24
+  
+  c_left_gate:
+    number: C13
+    default_pulse_ms: 24
+    max_pulse_ms: 24
+    default_hold_power: 0.25
+  
+  c_right_gate:
+    number: C14
+    default_pulse_ms: 24
+    max_pulse_ms: 24
+    default_hold_power: 0.25
 
 ball_devices:
   bd_trough:
@@ -328,7 +351,6 @@ ball_devices:
     eject_coil: c_trough_eject
     jam_switch: s_trough_jam
     eject_targets: bd_shooter_lane
-    eject_events: test_trough_eject
     tags: trough, home, drain
     debug: true
 
@@ -344,6 +366,18 @@ ball_devices:
     eject_targets: playfield
     debug: true
 
+  bd_left_saucer:
+    ball_switches: s_left_saucer
+    eject_coil: c_left_saucer
+    eject_targets: playfield
+    debug: true
+
+  bd_top_saucer:
+    ball_switches: s_top_saucer
+    eject_coil: c_top_saucer
+    eject_targets: playfield
+    debug: true
+
 flippers:
   f_left:
     main_coil: c_flipper_left_main
@@ -351,7 +385,8 @@ flippers:
     activation_switch: s_flipper_left
     eos_switch: s_eos_left
     use_eos: true
-    enable_events: machine_reset_phase_3
+    enable_events: ball_started
+    disable_events: ball_ending
     debug: true
   
   f_right:
@@ -360,33 +395,40 @@ flippers:
     activation_switch: s_flipper_right
     eos_switch: s_eos_right
     use_eos: true
-    enable_events: machine_reset_phase_3
+    enable_events: ball_started
+    disable_events: ball_ending
     debug: true   
+    
 autofire_coils:
   ac_left_sling:
     coil: c_left_sling
     switch: s_left_sling
-    enable_events: machine_reset_phase_3
+    enable_events: ball_started
+    disable_events: ball_ending
 
   ac_right_sling:
     coil: c_right_sling
     switch: s_right_sling
-    enable_events: machine_reset_phase_3  
+    enable_events: ball_started
+    disable_events: ball_ending  
 
   ac_left_pop:
     coil: c_left_pop
     switch: s_left_pop
-    enable_events: machine_reset_phase_3
+    enable_events: ball_started
+    disable_events: ball_ended
 
   ac_bottom_pop:
     coil: c_bottom_pop
     switch: s_bottom_pop
-    enable_events: machine_reset_phase_3
+    enable_events: ball_started
+    disable_events: ball_ended
 
   ac_right_pop:
     coil: c_right_pop
     switch: s_right_pop
-    enable_events: machine_reset_phase_3
+    enable_events: ball_started
+    disable_events: ball_ended
 
 
 drop_targets:
@@ -415,3 +457,16 @@ drop_target_banks:
     reset_events: machine_reset_phase_3
     debug: true
     console_log: full
+
+diverters:
+  d_left_gate:
+    activation_coil: c_left_gate
+    type: hold
+    activation_time: 300ms
+   
+
+  d_right_gate:
+    activation_coil: c_right_gate
+    type: hold
+    activation_time: 300ms
+    
