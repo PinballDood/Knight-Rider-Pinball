@@ -254,3 +254,50 @@ switches:
     number: 95
 
 
+coils:
+  c_trough_eject:
+    number: A4-B0-6
+    default_pulse_ms: 15
+    max_pulse_ms: 15
+   # Left flipper
+  c_flipper_left_main:
+    number: A4-B0-2
+    default_pulse_ms: 30
+    max_pulse_ms: 30
+
+  c_flipper_left_hold:
+    number: A4-B0-3
+    default_pulse_ms: 15
+    max_pulse_ms: 15
+ball_devices:
+  bd_trough:
+    ball_switches:
+      - s_trough_1
+      - s_trough_2
+      - s_trough_3
+      - s_trough_4
+      - s_trough_5
+      - s_trough_6
+    eject_coil: c_trough_eject
+    jam_switch: s_trough_jam
+    eject_targets: bd_shooter_lane
+    eject_events: test_trough_eject
+    tags: trough, home, drain
+    debug: true
+
+  bd_shooter_lane:
+    ball_switches: s_shooter
+    mechanical_eject: true
+    eject_targets: playfield
+    debug: true
+
+flippers:
+  f_left:
+    main_coil: c_flipper_left_main
+    hold_coil: c_flipper_left_hold
+    activation_switch: s_flipper_left
+    eos_switch: s_eos_left
+    use_eos: true
+    enable_events: machine_reset_phase_3
+    debug: true
+    
