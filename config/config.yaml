@@ -267,8 +267,55 @@ coils:
 
   c_flipper_left_hold:
     number: A4-B0-3
+    allow_enable: true
+    default_hold_power: 1.0
+ # Right Flipper
+  c_flipper_right_main:
+    number: A4-B0-5
+    default_pulse_ms: 25
+    max_pulse_ms: 25
+
+  c_flipper_right_hold:
+    number: A4-B0-4
+    allow_enable: true
+    default_hold_power: 1.0 
+
+  c_left_sling:
+    number: A4-B0-1
     default_pulse_ms: 15
     max_pulse_ms: 15
+
+  c_right_sling:
+    number: A4-B0-0
+    default_pulse_ms: 15
+    max_pulse_ms: 15  
+ 
+  c_left_pop:
+    number: A4-B1-3
+    default_pulse_ms: 15
+    max_pulse_ms: 15
+
+  c_bottom_pop:
+    number: A4-B1-4
+    default_pulse_ms: 15
+    max_pulse_ms: 15
+
+  c_right_pop:
+    number: A4-B1-5
+    default_pulse_ms: 15
+    max_pulse_ms: 15
+
+  c_drop_reset:
+    number: A4-B1-6
+    default_pulse_ms: 30
+    max_pulse_ms: 30
+
+  c_right_saucer:
+    number: A4-B1-7
+    default_pulse_ms: 15
+    max_pulse_ms: 15    
+
+
 ball_devices:
   bd_trough:
     ball_switches:
@@ -291,6 +338,12 @@ ball_devices:
     eject_targets: playfield
     debug: true
 
+  bd_right_saucer:
+    ball_switches: s_right_saucer
+    eject_coil: c_right_saucer
+    eject_targets: playfield
+    debug: true
+
 flippers:
   f_left:
     main_coil: c_flipper_left_main
@@ -300,4 +353,65 @@ flippers:
     use_eos: true
     enable_events: machine_reset_phase_3
     debug: true
-    
+  
+  f_right:
+    main_coil: c_flipper_right_main
+    hold_coil: c_flipper_right_hold
+    activation_switch: s_flipper_right
+    eos_switch: s_eos_right
+    use_eos: true
+    enable_events: machine_reset_phase_3
+    debug: true   
+autofire_coils:
+  ac_left_sling:
+    coil: c_left_sling
+    switch: s_left_sling
+    enable_events: machine_reset_phase_3
+
+  ac_right_sling:
+    coil: c_right_sling
+    switch: s_right_sling
+    enable_events: machine_reset_phase_3  
+
+  ac_left_pop:
+    coil: c_left_pop
+    switch: s_left_pop
+    enable_events: machine_reset_phase_3
+
+  ac_bottom_pop:
+    coil: c_bottom_pop
+    switch: s_bottom_pop
+    enable_events: machine_reset_phase_3
+
+  ac_right_pop:
+    coil: c_right_pop
+    switch: s_right_pop
+    enable_events: machine_reset_phase_3
+
+
+drop_targets:
+  dt_drop_1:
+    switch: s_drop_1
+    debug: true
+    console_log: full
+
+  dt_drop_2:
+    switch: s_drop_2
+    debug: true
+    console_log: full
+
+  dt_drop_3:
+    switch: s_drop_3
+    debug: true
+    console_log: full
+
+drop_target_banks:
+  dtb_main:
+    drop_targets:
+      - dt_drop_1
+      - dt_drop_2
+      - dt_drop_3
+    reset_coils: c_drop_reset
+    reset_events: machine_reset_phase_3
+    debug: true
+    console_log: full
