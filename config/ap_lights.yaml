@@ -1,0 +1,1010 @@
+#config_version=6
+
+
+# American Pinball Barry O's BBQ Challenge light hardware map
+# Converted for the Knight Rider MPF project.
+# Factory names are retained as comments for hardware cross-reference.
+# Hardware addresses come from the factory APLEDs section.
+
+lights:
+  # Factory: shootAgain
+  l_shoot_again:
+    number: A68-R11-G10-B09
+    platform: ap_led
+
+  # Factory: giLeftInlane1
+  l_gi_left_inlane1:
+    number: A61-R12-G13-B14
+    platform: ap_led
+    tags: gi_tilt_warning, gi
+
+  # Factory: giLeftInlane2
+  l_gi_left_inlane2:
+    number: A61-R09-G10-B11
+    platform: ap_led
+    tags: gi_tilt_warning, gi
+
+  # Factory: giRightInlane1
+  l_gi_right_inlane1:
+    number: A5C-R12-G13-B14
+    platform: ap_led
+    tags: gi_tilt_warning, gi
+
+  # Factory: giRightInlane2
+  l_gi_right_inlane2:
+    number: A5C-R06-G07-B08
+    platform: ap_led
+    tags: gi_tilt_warning, gi
+
+  # Factory: giShooterLane1
+  l_gi_shooter_lane1:
+    number: A68-R14-G13-B12
+    platform: ap_led
+    tags: gi
+
+  # Factory: giShooterLane2
+  l_gi_shooter_lane2:
+    number: A65-R11-G10-B09
+    platform: ap_led
+    tags: gi
+
+  # Factory: giLeftSling1
+  l_gi_left_sling1:
+    number: A61-R03-G04-B05
+    platform: ap_led
+    tags: gi_tilt_warning, gi
+
+  # Factory: giLeftSling2
+  l_gi_left_sling2:
+    number: A61-R06-G07-B08
+    platform: ap_led
+    tags: gi_tilt_warning, gi
+
+  # Factory: giRightSling1
+  l_gi_right_sling1:
+    number: A5C-R09-G10-B11
+    platform: ap_led
+    tags: gi_tilt_warning, gi
+
+  # Factory: giRightSling2
+  l_gi_right_sling2:
+    number: A5C-R03-G04-B05
+    platform: ap_led
+    tags: gi_tilt_warning, gi
+
+  # Factory: leftOutlane
+  l_left_outlane:
+    number: A4F-R12-G13-B14
+    platform: ap_led
+
+  # Factory: leftInlane
+  l_left_inlane:
+    number: A62-R09-G10-B11
+    platform: ap_led
+
+  # Factory: rightInlane
+  l_right_inlane:
+    number: A5E-R03-G04-B05
+    platform: ap_led
+
+  # Factory: rightOutlane
+  l_right_outlane:
+    number: A5E-R09-G10-B11
+    platform: ap_led
+
+  # Factory: grid1
+  l_grid1:
+    number: A64-R12-G13-B14
+    platform: ap_led
+
+  # Factory: grid2
+  l_grid2:
+    number: A64-R00-G01-B02
+    platform: ap_led
+
+  # Factory: grid3
+  l_grid3:
+    number: A64-R03-G04-B05
+    platform: ap_led
+
+  # Factory: grid4
+  l_grid4:
+    number: A64-R09-G10-B11
+    platform: ap_led
+
+  # Factory: grid5
+  l_grid5:
+    number: A64-R06-G07-B08
+    platform: ap_led
+
+  # Factory: grid6
+  l_grid6:
+    number: A68-R00-G01-B02
+    platform: ap_led
+
+  # Factory: grid7
+  l_grid7:
+    number: A65-R06-G07-B08
+    platform: ap_led
+
+  # Factory: grid8
+  l_grid8:
+    number: A65-R00-G01-B02
+    platform: ap_led
+
+  # Factory: grid9
+  l_grid9:
+    number: A68-R03-G04-B05
+    platform: ap_led
+
+  # Factory: grid10
+  l_grid10:
+    number: A65-R03-G04-B05
+    platform: ap_led
+
+  # Factory: grid11
+  l_grid11:
+    number: A69-R00-G01-B02
+    platform: ap_led
+
+  # Factory: grid12
+  l_grid12:
+    number: A68-R06-G07-B08
+    platform: ap_led
+
+  # Factory: grid13
+  l_grid13:
+    number: A69-R09-G10-B11
+    platform: ap_led
+
+  # Factory: grid14
+  l_grid14:
+    number: A69-R06-G07-B08
+    platform: ap_led
+
+  # Factory: grid15
+  l_grid15:
+    number: A69-R03-G04-B05
+    platform: ap_led
+
+  # Factory: challengerCenter
+  l_challenger_center:
+    number: A5B-R06-G07-B08
+    platform: ap_led
+
+  # Factory: challenger1
+  l_challenger1:
+    number: A5B-R00-G01-B02
+    platform: ap_led
+
+  # Factory: challenger2
+  l_challenger2:
+    number: A5C-R00-G01-B02
+    platform: ap_led
+
+  # Factory: challenger3
+  l_challenger3:
+    number: A5D-R00-G01-B02
+    platform: ap_led
+
+  # Factory: challenger4
+  l_challenger4:
+    number: A5D-R06-G07-B08
+    platform: ap_led
+
+  # Factory: challenger5
+  l_challenger5:
+    number: A5F-R00-G01-B02
+    platform: ap_led
+
+  # Factory: challenger6
+  l_challenger6:
+    number: A5F-R06-G07-B08
+    platform: ap_led
+
+  # Factory: giLeftBank1
+  l_gi_left_bank1:
+    number: A79-R03-G04-B05
+    platform: ap_led
+    tags: gi
+
+  # Factory: giLeftBank2
+  l_gi_left_bank2:
+    number: A79-R12-G13-B14
+    platform: ap_led
+    tags: gi
+
+  # Factory: giLeftBank3
+  l_gi_left_bank3:
+    number: A79-R06-G07-B08
+    platform: ap_led
+    tags: gi
+
+  # Factory: giLeftBank4
+  l_gi_left_bank4:
+    number: A79-R09-G10-B11
+    platform: ap_led
+    tags: gi
+
+  # Factory: leftBank1
+  l_left_bank1:
+    number: A62-R12-G13-B14
+    platform: ap_led
+
+  # Factory: leftBank2
+  l_left_bank2:
+    number: A62-R00-G01-B02
+    platform: ap_led
+
+  # Factory: leftBank3
+  l_left_bank3:
+    number: A62-R03-G04-B05
+    platform: ap_led
+
+  # Factory: leftBankArrow1
+  l_left_bank_arrow1:
+    number: A4F-R09-G10-B11
+    platform: ap_led
+
+  # Factory: leftBankArrow2
+  l_left_bank_arrow2:
+    number: A4F-R06-G07-B08
+    platform: ap_led
+
+  # Factory: leftBankArrow3
+  l_left_bank_arrow3:
+    number: A4F-R03-G04-B05
+    platform: ap_led
+
+  # Factory: giRightStand1
+  l_gi_right_stand1:
+    number: A6F-R03-G04-B05
+    platform: ap_led
+    tags: gi
+
+  # Factory: giRightStand2
+  l_gi_right_stand2:
+    number: A6F-R06-G07-B08
+    platform: ap_led
+    tags: gi
+
+  # Factory: giRightStand3
+  l_gi_right_stand3:
+    number: A6F-R09-G10-B11
+    platform: ap_led
+    tags: gi
+
+  # Factory: rightStand1
+  l_right_stand1:
+    number: A5E-R12-G13-B14
+    platform: ap_led
+
+  # Factory: rightStand2
+  l_right_stand2:
+    number: A5E-R06-G07-B08
+    platform: ap_led
+
+  # Factory: leftSaucerInsert1
+  l_left_saucer_insert1:
+    number: A4E-R12-G13-B14
+    platform: ap_led
+
+  # Factory: leftSaucerInsert2
+  l_left_saucer_insert2:
+    number: A4E-R09-G10-B11
+    platform: ap_led
+
+  # Factory: leftSaucerInsert3
+  l_left_saucer_insert3:
+    number: A4E-R06-G07-B08
+    platform: ap_led
+
+  # Factory: leftSaucerArrow1
+  l_left_saucer_arrow1:
+    number: A4E-R03-G04-B05
+    platform: ap_led
+
+  # Factory: leftSaucerArrow2
+  l_left_saucer_arrow2:
+    number: A4E-R00-G01-B02
+    platform: ap_led
+
+  # Factory: leftSaucerArrow3
+  l_left_saucer_arrow3:
+    number: A4F-R00-G01-B02
+    platform: ap_led
+
+  # Factory: giLeftSaucer
+  l_gi_left_saucer:
+    number: A62-R06-G07-B08
+    platform: ap_led
+    tags: gi
+
+  # Factory: leftRampInsert1
+  l_left_ramp_insert1:
+    number: A78-R12-G13-B14
+    platform: ap_led
+
+  # Factory: leftRampInsert2
+  l_left_ramp_insert2:
+    number: A78-R09-G10-B11
+    platform: ap_led
+
+  # Factory: leftRampInsert3
+  l_left_ramp_insert3:
+    number: A78-R06-G07-B08
+    platform: ap_led
+
+  # Factory: leftRampArrow1
+  l_left_ramp_arrow1:
+    number: A78-R03-G04-B05
+    platform: ap_led
+
+  # Factory: leftRampArrow2
+  l_left_ramp_arrow2:
+    number: A78-R00-G01-B02
+    platform: ap_led
+
+  # Factory: leftRampArrow3
+  l_left_ramp_arrow3:
+    number: A79-R00-G01-B02
+    platform: ap_led
+
+  # Factory: giLeftRamp1
+  l_gi_left_ramp1:
+    number: A48-R09-G10-B11
+    platform: ap_led
+    tags: gi
+
+  # Factory: giLeftRamp2
+  l_gi_left_ramp2:
+    number: A48-R12-G13-B14
+    platform: ap_led
+    tags: gi
+
+  # Factory: leftOrbitInsert1
+  l_left_orbit_insert1:
+    number: A6C-R12-G13-B14
+    platform: ap_led
+
+  # Factory: leftOrbitInsert2
+  l_left_orbit_insert2:
+    number: A6C-R09-G10-B11
+    platform: ap_led
+
+  # Factory: leftOrbitInsert3
+  l_left_orbit_insert3:
+    number: A6C-R06-G07-B08
+    platform: ap_led
+
+  # Factory: leftOrbitArrow1
+  l_left_orbit_arrow1:
+    number: A6C-R03-G04-B05
+    platform: ap_led
+
+  # Factory: leftOrbitArrow2
+  l_left_orbit_arrow2:
+    number: A6C-R00-G01-B02
+    platform: ap_led
+
+  # Factory: leftOrbitArrow3
+  l_left_orbit_arrow3:
+    number: A6D-R00-G01-B02
+    platform: ap_led
+
+  # Factory: leftScoringPost
+  l_left_scoring_post:
+    number: A6D-R03-G04-B05
+    platform: ap_led
+
+  # Factory: giPitTargets
+  l_gi_pit_targets:
+    number: A4A-R12-B13-G14
+    platform: ap_led
+
+  # Factory: centerBank1
+  l_center_bank1:
+    number: A56-R06-G07-B08
+    platform: ap_led
+
+  # Factory: centerBank2
+  l_center_bank2:
+    number: A57-R06-G07-B08
+    platform: ap_led
+
+  # Factory: centerBank3
+  l_center_bank3:
+    number: A57-R09-G10-B11
+    platform: ap_led
+
+  # Factory: centerBankArrow1
+  l_center_bank_arrow1:
+    number: A6D-R06-G07-B08
+    platform: ap_led
+
+  # Factory: centerBankArrow2
+  l_center_bank_arrow2:
+    number: A6D-R09-G10-B11
+    platform: ap_led
+
+  # Factory: centerBankArrow3
+  l_center_bank_arrow3:
+    number: A6D-R12-G13-B14
+    platform: ap_led
+
+  # Factory: rightScoringPost
+  l_right_scoring_post:
+    number: A4D-R06-G07-B08
+    platform: ap_led
+
+  # Factory: rightOrbitInsert1
+  l_right_orbit_insert1:
+    number: A4C-R12-G13-B14
+    platform: ap_led
+
+  # Factory: rightOrbitInsert2
+  l_right_orbit_insert2:
+    number: A4C-R09-G10-B11
+    platform: ap_led
+
+  # Factory: rightOrbitInsert3
+  l_right_orbit_insert3:
+    number: A4C-R06-G07-B08
+    platform: ap_led
+
+  # Factory: rightOrbitArrow1
+  l_right_orbit_arrow1:
+    number: A4C-R03-G04-B05
+    platform: ap_led
+
+  # Factory: rightOrbitArrow2
+  l_right_orbit_arrow2:
+    number: A4C-R00-G01-B02
+    platform: ap_led
+
+  # Factory: rightOrbitArrow3
+  l_right_orbit_arrow3:
+    number: A4D-R00-G01-B02
+    platform: ap_led
+
+  # Factory: drop1
+  l_drop1:
+    number: A4D-R09-G10-B11
+    platform: ap_led
+
+  # Factory: drop2
+  l_drop2:
+    number: A4D-R03-G04-B05
+    platform: ap_led
+
+  # Factory: drop3
+  l_drop3:
+    number: A4D-R12-G13-B14
+    platform: ap_led
+
+  # Factory: rightRampInsert1
+  l_right_ramp_insert1:
+    number: A56-R12-G13-B14
+    platform: ap_led
+
+  # Factory: rightRampInsert2
+  l_right_ramp_insert2:
+    number: A57-R12-G13-B14
+    platform: ap_led
+
+  # Factory: rightRampInsert3
+  l_right_ramp_insert3:
+    number: A56-R00-G01-B02
+    platform: ap_led
+
+  # Factory: rightRampInsert4
+  l_right_ramp_insert4:
+    number: A57-R00-G01-B02
+    platform: ap_led
+
+  # Factory: rightRampInsert5
+  l_right_ramp_insert5:
+    number: A56-R03-G04-B05
+    platform: ap_led
+
+  # Factory: rightRampInsert6
+  l_right_ramp_insert6:
+    number: A57-R03-G04-B05
+    platform: ap_led
+
+  # Factory: rightRampArrow1
+  l_right_ramp_arrow1:
+    number: A55-R00-G01-B02
+    platform: ap_led
+
+  # Factory: rightRampArrow2
+  l_right_ramp_arrow2:
+    number: A55-R03-G04-B05
+    platform: ap_led
+
+  # Factory: rightRampArrow3
+  l_right_ramp_arrow3:
+    number: A55-R06-G07-B08
+    platform: ap_led
+
+  # Factory: giRightRamp1
+  l_gi_right_ramp1:
+    number: A44-R06-G07-B08
+    platform: ap_led
+    tags: gi
+
+  # Factory: giRightRamp2
+  l_gi_right_ramp2:
+    number: A42-R00-G01-B02
+    platform: ap_led
+    tags: gi
+
+  # Factory: giRightRamp3
+  l_gi_right_ramp3:
+    number: A42-R03-G04-B05
+    platform: ap_led
+    tags: gi
+
+  # Factory: topSaucerInsert1
+  l_top_saucer_insert1:
+    number: A58-R12-G13-B14
+    platform: ap_led
+
+  # Factory: topSaucerInsert2
+  l_top_saucer_insert2:
+    number: A58-R09-G10-B11
+    platform: ap_led
+
+  # Factory: topSaucerInsert3
+  l_top_saucer_insert3:
+    number: A58-R06-G07-B08
+    platform: ap_led
+
+  # Factory: topSaucerArrow1
+  l_top_saucer_arrow1:
+    number: A58-R03-G04-B05
+    platform: ap_led
+
+  # Factory: topSaucerArrow2
+  l_top_saucer_arrow2:
+    number: A58-R00-G01-B02
+    platform: ap_led
+
+  # Factory: topSaucerArrow3
+  l_top_saucer_arrow3:
+    number: A59-R00-G01-B02
+    platform: ap_led
+
+  # Factory: rightSaucerInsert1
+  l_right_saucer_insert1:
+    number: A6E-R12-G13-B14
+    platform: ap_led
+
+  # Factory: rightSaucerInsert2
+  l_right_saucer_insert2:
+    number: A6E-R09-G10-B11
+    platform: ap_led
+
+  # Factory: rightSaucerInsert3
+  l_right_saucer_insert3:
+    number: A6E-R06-G07-B08
+    platform: ap_led
+
+  # Factory: rightSaucerArrow1
+  l_right_saucer_arrow1:
+    number: A6E-R03-G04-B05
+    platform: ap_led
+
+  # Factory: rightSaucerArrow2
+  l_right_saucer_arrow2:
+    number: A6E-R00-G01-B02
+    platform: ap_led
+
+  # Factory: rightSaucerArrow3
+  l_right_saucer_arrow3:
+    number: A6F-R00-G01-B02
+    platform: ap_led
+
+  # Factory: giRightSaucer
+  l_gi_right_saucer:
+    number: A6F-R12-G13-B14
+    platform: ap_led
+    tags: gi
+
+  # Factory: bottomPopTop
+  l_bottom_pop_top:
+    number: A52-R6-G7-B8
+    platform: ap_led
+
+  # Factory: bottomPopWhite
+  l_bottom_pop_white:
+    number: A52-R9
+    platform: ap_led
+
+  # Factory: bottomPopBottom
+  l_bottom_pop_bottom:
+    number: A52-R10-G11-B12
+    platform: ap_led
+
+  # Factory: bottomPopBottomWhite
+  l_bottom_pop_bottom_white:
+    number: A52-R13
+    platform: ap_led
+
+  # Factory: bottomPop1
+  l_bottom_pop1:
+    number: A51-R3-G4-B5
+    platform: ap_led
+    tags: bottom_pop
+
+  # Factory: bottomPop2
+  l_bottom_pop2:
+    number: A51-R6-G7-B8
+    platform: ap_led
+    tags: bottom_pop
+  # Factory: bottomPop3
+  l_bottom_pop3:
+    number: A51-R9-G10-B11
+    platform: ap_led
+    tags: bottom_pop
+  # Factory: bottomPop4
+  l_bottom_pop4:
+    number: A51-R12-G13-B14
+    platform: ap_led
+    tags: bottom_pop
+  # Factory: bottomPop5
+  l_bottom_pop5:
+    number: A52-R0-G1-B2
+    platform: ap_led
+    tags: bottom_pop
+  # Factory: bottomPop6
+  l_bottom_pop6:
+    number: A52-R3-G4-B5
+    platform: ap_led
+    tags: bottom_pop
+  # Factory: bottomPop7
+  l_bottom_pop7:
+    number: A50-R0-G1-B2
+    platform: ap_led
+    tags: bottom_pop
+  # Factory: bottomPop8
+  l_bottom_pop8:
+    number: A50-R3-G4-B5
+    platform: ap_led
+    tags: bottom_pop
+  # Factory: bottomPop9
+  l_bottom_pop9:
+    number: A50-R6-G7-B8
+    platform: ap_led
+    tags: bottom_pop
+  # Factory: bottomPop10
+  l_bottom_pop10:
+    number: A50-R9-G10-B11
+    platform: ap_led
+    tags: bottom_pop
+  # Factory: bottomPop11
+  l_bottom_pop11:
+    number: A50-R12-G13-B14
+    platform: ap_led
+    tags: bottom_pop
+  # Factory: bottomPop12
+  l_bottom_pop12:
+    number: A51-R0-G1-B2
+    platform: ap_led
+    tags: bottom_pop
+  # Factory: leftPopTop
+  l_left_pop_top:
+    number: A76-R6-G7-B8
+    platform: ap_led
+
+  # Factory: leftPopWhite
+  l_left_pop_white:
+    number: A76-R9
+    platform: ap_led
+
+  # Factory: leftPopBottom
+  l_left_pop_bottom:
+    number: A76-R10-G11-B12
+    platform: ap_led
+
+  # Factory: leftPopBottomWhite
+  l_left_pop_bottom_white:
+    number: A76-R13
+    platform: ap_led
+
+  # Factory: leftPop1
+  l_left_pop1:
+    number: A75-R3-G4-B5
+    platform: ap_led
+
+  # Factory: leftPop2
+  l_left_pop2:
+    number: A75-R6-G7-B8
+    platform: ap_led
+
+  # Factory: leftPop3
+  l_left_pop3:
+    number: A75-R9-G10-B11
+    platform: ap_led
+
+  # Factory: leftPop4
+  l_left_pop4:
+    number: A75-R12-G13-B14
+    platform: ap_led
+
+  # Factory: leftPop5
+  l_left_pop5:
+    number: A76-R0-G1-B2
+    platform: ap_led
+
+  # Factory: leftPop6
+  l_left_pop6:
+    number: A76-R3-G4-B5
+    platform: ap_led
+
+  # Factory: leftPop7
+  l_left_pop7:
+    number: A74-R0-G1-B2
+    platform: ap_led
+
+  # Factory: leftPop8
+  l_left_pop8:
+    number: A74-R3-G4-B5
+    platform: ap_led
+
+  # Factory: leftPop9
+  l_left_pop9:
+    number: A74-R6-G7-B8
+    platform: ap_led
+
+  # Factory: leftPop10
+  l_left_pop10:
+    number: A74-R9-G10-B11
+    platform: ap_led
+
+  # Factory: leftPop11
+  l_left_pop11:
+    number: A74-R12-G13-B14
+    platform: ap_led
+
+  # Factory: leftPop12
+  l_left_pop12:
+    number: A75-R0-G1-B2
+    platform: ap_led
+
+  # Factory: rightPopTop
+  l_right_pop_top:
+    number: A7E-R6-G7-B8
+    platform: ap_led
+
+  # Factory: rightPopWhite
+  l_right_pop_white:
+    number: A7E-R9
+    platform: ap_led
+
+  # Factory: rightPopBottom
+  l_right_pop_bottom:
+    number: A7E-R10-G11-B12
+    platform: ap_led
+
+  # Factory: rightPopBottomWhite
+  l_right_pop_bottom_white:
+    number: A7E-R13
+    platform: ap_led
+
+  # Factory: rightPop1
+  l_right_pop1:
+    number: A7D-R3-G4-B5
+    platform: ap_led
+
+  # Factory: rightPop2
+  l_right_pop2:
+    number: A7D-R6-G7-B8
+    platform: ap_led
+
+  # Factory: rightPop3
+  l_right_pop3:
+    number: A7D-R9-G10-B11
+    platform: ap_led
+
+  # Factory: rightPop4
+  l_right_pop4:
+    number: A7D-R12-G13-B14
+    platform: ap_led
+
+  # Factory: rightPop5
+  l_right_pop5:
+    number: A7E-R0-G1-B2
+    platform: ap_led
+
+  # Factory: rightPop6
+  l_right_pop6:
+    number: A7E-R3-G4-B5
+    platform: ap_led
+
+  # Factory: rightPop7
+  l_right_pop7:
+    number: A7C-R0-G1-B2
+    platform: ap_led
+
+  # Factory: rightPop8
+  l_right_pop8:
+    number: A7C-R3-G4-B5
+    platform: ap_led
+
+  # Factory: rightPop9
+  l_right_pop9:
+    number: A7C-R6-G7-B8
+    platform: ap_led
+
+  # Factory: rightPop10
+  l_right_pop10:
+    number: A7C-R9-G10-B11
+    platform: ap_led
+
+  # Factory: rightPop11
+  l_right_pop11:
+    number: A7C-R12-G13-B14
+    platform: ap_led
+
+  # Factory: rightPop12
+  l_right_pop12:
+    number: A7D-R0-G1-B2
+    platform: ap_led
+
+  # Factory: fix
+  l_fix:
+    number: A46-R12-G13-B14
+    platform: ap_led
+
+  # Factory: giFix
+  l_gi_fix:
+    number: A40-R06-G07-B08
+    platform: ap_led
+    tags: gi
+
+  # Factory: grill
+  l_grill:
+    number: A4A-R09-G10-B11
+    platform: ap_led
+
+  # Factory: giGrill
+  l_gi_grill:
+    number: A42-R06-G07-B08
+    platform: ap_led
+    tags: gi
+
+  # Factory: giTopLane1
+  l_gi_top_lane1:
+    number: A40-R09-G10-B11
+    platform: ap_led
+    tags: gi
+
+  # Factory: giTopLane2
+  l_gi_top_lane2:
+    number: A41-R03-G04-B05
+    platform: ap_led
+    tags: gi
+
+  # Factory: giTopLane3
+  l_gi_top_lane3:
+    number: A41-R06-G07-B08
+    platform: ap_led
+    tags: gi
+
+  # Factory: giTopLane4
+  l_gi_top_lane4:
+    number: A41-R09-G10-B11
+    platform: ap_led
+    tags: gi
+
+  # Factory: giTopLane5
+  l_gi_top_lane5:
+    number: A41-R00-G01-B02
+    platform: ap_led
+    tags: gi
+
+  # Factory: topLanes1
+  l_top_lanes1:
+    number: A46-R00-G01-B02
+    platform: ap_led
+
+  # Factory: topLanes2
+  l_top_lanes2:
+    number: A46-R03-G04-B05
+    platform: ap_led
+
+  # Factory: topLanes3
+  l_top_lanes3:
+    number: A44-R00-G01-B02
+    platform: ap_led
+
+  # Factory: topLanes4
+  l_top_lanes4:
+    number: A44-R03-G04-B05
+    platform: ap_led
+
+  # Factory: bottomLanes1
+  l_bottom_lanes1:
+    number: A48-R00-G01-B02
+    platform: ap_led
+
+  # Factory: bottomLanes2
+  l_bottom_lanes2:
+    number: A48-R03-G04-B05
+    platform: ap_led
+
+  # Factory: bottomLanes3
+  l_bottom_lanes3:
+    number: A4A-R00-G01-B02
+    platform: ap_led
+
+  # Factory: bottomLanes4
+  l_bottom_lanes4:
+    number: A4A-R03-G04-B05
+    platform: ap_led
+
+  # Factory: giLeftOrbit1
+  l_gi_left_orbit1:
+    number: A40-R00-G01-B02
+    platform: ap_led
+    tags: gi
+
+  # Factory: giLeftOrbit2
+  l_gi_left_orbit2:
+    number: A40-R03-G04-B05
+    platform: ap_led
+    tags: gi
+
+  # Factory: giTopSaucer1
+  l_gi_top_saucer1:
+    number: A42-R09-G10-B11
+    platform: ap_led
+    tags: gi
+
+  # Factory: giTopSaucer2
+  l_gi_top_saucer2:
+    number: A4A-R06-G07-B08
+    platform: ap_led
+    tags: gi
+
+  # Factory: giTopLeftGrill
+  l_gi_top_left_grill:
+    number: A46-R09-G10-B11
+    platform: ap_led
+    tags: gi
+
+  # Factory: backPanel
+  l_back_panel:
+    number: A72-R4-G5-B6
+    platform: ap_led
+
+  # Factory: flasherLeftBank
+  l_flasher_left_bank:
+    number: A72-R12
+    platform: ap_led
+
+  # Factory: flasherRightBank
+  l_flasher_right_bank:
+    number: A72-R11
+    platform: ap_led
+
+  # Factory: flasherLeftRamp
+  l_flasher_left_ramp:
+    number: A72-R2
+    platform: ap_led
+
+  # Factory: flasherRightRamp
+  l_flasher_right_ramp:
+    number: A72-R3
+    platform: ap_led
+
+  # Factory: flasherTopLeft
+  l_flasher_top_left:
+    number: A72-R0
+    platform: ap_led
+
+  # Factory: flasherTopRight
+  l_flasher_top_right:
+    number: A72-R1
+    platform: ap_led
