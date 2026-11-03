@@ -1,0 +1,131 @@
+#show_version=6
+
+# Forward: 1 -> 12
+- duration: 80ms
+  lights:
+    l_bottom_pop1: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop1: off
+    l_bottom_pop2: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop2: off
+    l_bottom_pop3: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop3: off
+    l_bottom_pop4: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop4: off
+    l_bottom_pop5: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop5: off
+    l_bottom_pop6: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop6: off
+    l_bottom_pop7: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop7: off
+    l_bottom_pop8: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop8: off
+    l_bottom_pop9: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop9: off
+    l_bottom_pop10: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop10: off
+    l_bottom_pop11: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop11: off
+    l_bottom_pop12: red
+
+# Pause at end
+- duration: 250ms
+  lights:
+    l_bottom_pop12: red
+
+# Reverse: 12 -> 1
+- duration: 80ms
+  lights:
+    l_bottom_pop12: off
+    l_bottom_pop11: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop11: off
+    l_bottom_pop10: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop10: off
+    l_bottom_pop9: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop9: off
+    l_bottom_pop8: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop8: off
+    l_bottom_pop7: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop7: off
+    l_bottom_pop6: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop6: off
+    l_bottom_pop5: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop5: off
+    l_bottom_pop4: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop4: off
+    l_bottom_pop3: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop3: off
+    l_bottom_pop2: red
+
+- duration: 80ms
+  lights:
+    l_bottom_pop2: off
+    l_bottom_pop1: red
+
+# Pause at beginning
+- duration: 250ms
+  lights:
+    l_bottom_pop1: red
+
+- duration: 1ms
+  lights:
+    l_bottom_pop1: off

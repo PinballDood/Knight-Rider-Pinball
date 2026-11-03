@@ -1,14 +1,19 @@
 #config_version=6
-
+config:
+  - ap_lights.yaml
 ## MPF Main Machine Config File
 #
 # This file defines your system-wide properties like switches,
 # drivers, ball devices, hardware platforms, and more. You can
 # include everything here, or create sub-config files to be
 # imported and merged with this one.
+mpf:
+  platforms:
+    ap_led: platforms.ap_led.APLedPlatform
 hardware:
   platform: p3_roc
   driverboards: pdb
+  lights: ap_led
 playfields:
   playfield:
     default_source_device: bd_trough
@@ -469,4 +474,5 @@ diverters:
     activation_coil: c_right_gate
     type: hold
     activation_time: 300ms
-    
+
+
