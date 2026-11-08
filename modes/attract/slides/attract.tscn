@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://215c2u8eu35l"]
+
+[ext_resource type="Script" uid="uid://ttrlr6mr8akc" path="res://modes/attract/slides/attract.gd" id="1_o4v0r"]
+
+[node name="Attract" type="Control" unique_id=1540623181]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_o4v0r")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=521050374]
+layout_mode = 0
+offset_right = 1371.0
+offset_bottom = 767.0
+color = Color(0.05490196, 0.24705882, 1, 1)
+
+[node name="Label" type="Label" parent="." unique_id=362760411]
+layout_mode = 0
+offset_right = 1369.0
+offset_bottom = 774.0
+theme_override_font_sizes/font_size = 100
+text = "FlipOut Pinball Presents
+"
+horizontal_alignment = 1
+vertical_alignment = 1
