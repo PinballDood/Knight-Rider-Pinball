@@ -1,4 +1,6 @@
 #config_version=6
+
+    
 config:
   - ap_lights.yaml
 ## MPF Main Machine Config File
@@ -476,3 +478,9 @@ diverters:
     activation_time: 300ms
 
 
+show_player:
+  mode_attract_started:
+    kr_attract_90s:
+      loops: -1
+      priority: 100
+      speed: 1

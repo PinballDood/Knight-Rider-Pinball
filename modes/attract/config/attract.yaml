@@ -1,7 +1,14 @@
 #config_version=6
 
-# Attract mode that starts when the machine boots up, stops
-# whenever a game is started, and re-starts after the game ends.
+mode:
+  priority: 10
 
 slide_player:
   mode_attract_started: attract
+
+show_player:
+  mode_attract_started:
+   kr_attract_90s:
+    loops: -1 
+    priority: 10
+    speed: 1
