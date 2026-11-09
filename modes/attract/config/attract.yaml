@@ -1,5 +1,6 @@
 #config_version=6
 
+
 mode:
   priority: 10
 
@@ -9,6 +10,6 @@ slide_player:
 show_player:
   mode_attract_started:
    kr_attract_90s:
-    loops: -1 
-    priority: 10
-    speed: 1
+     loops: -1
+     priority: 10
+     speed: 1

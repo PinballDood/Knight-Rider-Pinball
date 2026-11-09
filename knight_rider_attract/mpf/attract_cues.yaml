@@ -3,14 +3,14 @@
 # YOUR actual light names. Example light groups must be replaced.
 light_player:
   kr_attract_intro:
-    l_pop_bottom: red
+  l_pop_bottom: red
   kr_attract_video:
-    l_pop_bottom: red
+  l_pop_bottom: red
   kr_attract_diagnostics:
-    l_pop_bottom: blue
+  l_pop_bottom: blue
   kr_attract_title:
-    l_pop_bottom: red
+  l_pop_bottom: red
   kr_attract_scores:
-    l_pop_bottom: white
+  l_pop_bottom: white
   kr_attract_standby:
-    l_pop_bottom: red
+  l_pop_bottom: red

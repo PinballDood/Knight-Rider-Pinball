@@ -1,0 +1,7 @@
+#config_version=6
+
+# Base mode that starts at the beginning of each ball
+# and stops at the end of each ball.
+
+mode:
+  priority: 100
