@@ -5,7 +5,11 @@ mode:
   priority: 10
 
 slide_player:
-  mode_attract_started: attract
+  mode_attract_started:
+    attract:
+      action: play
+      priority: 100
+
 
 sound_player:
   mode_attract_started:

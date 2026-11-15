@@ -1,0 +1,1 @@
+Copy the six PNG files into res://assets/michael_knight/ in Godot. Attach michael_knight.gd to an AnimatedSprite2D named MichaelKnight. Every PNG is a complete 512x512 RGBA frame. Animation plays once and holds the final frame.
