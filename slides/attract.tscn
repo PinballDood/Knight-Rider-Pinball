@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://bfgfsa8pngxxb"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_r1mnt"]
+[ext_resource type="VideoStream" uid="uid://dmbj6mgval78e" path="res://assets/video/knight_rider_intro.ogv" id="2_hhxni"]
+[ext_resource type="Script" uid="uid://bov7mrgxslshq" path="res://addons/mpf-gmc/classes/mpf_video_player.gd" id="3_f161n"]
+
+[node name="Attract" type="Control" unique_id=2023812270]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_r1mnt")
+metadata/_custom_type_script = "uid://dru3usokwlhd3"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=157185257]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 1024.0
+color = Color(0.007843138, 0.10980392, 1, 1)
+
+[node name="Label" type="Label" parent="ColorRect" unique_id=1926394758]
+layout_mode = 0
+offset_right = 1279.0
+offset_bottom = 1027.0
+theme_override_font_sizes/font_size = 90
+text = "KNIGHT RIDER PINBALL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MPFVideoPlayer" type="VideoStreamPlayer" parent="ColorRect" unique_id=1377709788]
+layout_mode = 0
+offset_left = 267.0
+offset_top = 4.0
+offset_right = 1009.0
+offset_bottom = 441.0
+stream = ExtResource("2_hhxni")
+autoplay = true
+bus = &"music"
+script = ExtResource("3_f161n")
+metadata/_custom_type_script = "uid://bov7mrgxslshq"
