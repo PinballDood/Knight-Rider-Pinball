@@ -1,8 +1,0 @@
-78098b89c88a74ebe8c20117b8754620
-::res://::1794183487
-Main.tscn::PackedScene::-1::1794129964::0::1::::<><><>0<>0<><>::res://scripts/attract.gd
-::res://assets/::1794111093
-::res://assets/video/::1794112653
-knight_rider_intro.ogv::VideoStreamTheora::8004195005539344094::1793846370::0::1::::<><><>0<>0<><>::
-::res://scripts/::1794182993
-attract.gd::GDScript::6413627705103051448::1794182993::0::1::::<>Control<><>0<>0<><>::
