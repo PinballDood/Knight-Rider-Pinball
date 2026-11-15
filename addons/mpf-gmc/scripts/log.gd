@@ -8,13 +8,13 @@ extends RefCounted
 class_name GMCLogger
 
 enum LogLevel {
-	USE_GLOBAL_LEVEL = -1,
-	VERBOSE = 1,
-	DEBUG = 10,
-	INFO = 20,
-	LOG = 25,
-	WARNING = 30,
-	ERROR = 40,
+  USE_GLOBAL_LEVEL = -1,
+  VERBOSE = 1,
+  DEBUG = 10,
+  INFO = 20,
+  LOG = 25,
+  WARNING = 30,
+  ERROR = 40,
 }
 
 var _level: LogLevel = LogLevel.INFO
@@ -22,18 +22,18 @@ var _global_level: LogLevel = LogLevel.INFO
 var log_name: String = ""
 
 func _init(name: String = "", level: LogLevel = LogLevel.USE_GLOBAL_LEVEL, set_global: bool = false) -> void:
-	self.rename(name)
-	self.setLevel(level)
-	if set_global:
-		_global_level = level
+  self.rename(name)
+  self.setLevel(level)
+  if set_global:
+    _global_level = level
 
 func rename(new_name: String = ""):
-	self.log_name = "%s : " % new_name if new_name else ""
+  self.log_name = "%s : " % new_name if new_name else ""
 
 func setLevel(level: LogLevel, set_global: bool = false) -> void:
-	if set_global:
-		_global_level = level
-	# GMC panel doesn't allow -1 as an index, so 0 counts as -1.
+  if set_global:
+    _global_level = level
+  # GMC panel doesn't allow -1 as an index, so 0 counts as -1.
 	if level <=0:
 		level = _global_level
 	_level = level

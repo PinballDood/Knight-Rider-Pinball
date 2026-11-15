@@ -7,9 +7,8 @@ mode:
 slide_player:
   mode_attract_started: attract
 
-show_player:
+sound_player:
   mode_attract_started:
-   kr_attract_90s:
-     loops: -1
-     priority: 10
-     speed: 1
+    it-appears-to-be-a-large-my-goodness-large-isn-t-the-word-it-s-enormous:
+      bus: music
+      
